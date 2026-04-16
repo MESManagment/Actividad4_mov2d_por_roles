@@ -1,0 +1,188 @@
+[gd_scene format=3 uid="uid://kl07ey8xwddk"]
+
+[ext_resource type="PackedScene" uid="uid://olwm7bm0o2lk" path="res://jugador.tscn" id="1_6ba58"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_lgngo"]
+size = Vector2(2112, 169)
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_aou4a"]
+size = Vector2(118, 71)
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_5ckkb"]
+size = Vector2(100, 71)
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_otwa2"]
+size = Vector2(85, 648)
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_2hh7m"]
+size = Vector2(81, 898)
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_t8jxu"]
+size = Vector2(159.15851, 830.6177)
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_6ba58"]
+size = Vector2(101, 38)
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_fw4w5"]
+size = Vector2(101, 38)
+
+[node name="Mundo" type="Node2D" unique_id=1234568946]
+position = Vector2(113, -64)
+
+[node name="Escenario" type="StaticBody2D" parent="." unique_id=953588585]
+position = Vector2(-115, 56)
+
+[node name="Cielo" type="ColorRect" parent="Escenario" unique_id=1010986779]
+offset_left = -1471.0
+offset_top = -1609.0
+offset_right = 3746.0
+offset_bottom = 1431.0
+color = Color(0.35512626, 0.6858001, 0.72606474, 1)
+
+[node name="Pasto" type="ColorRect" parent="Escenario" unique_id=795259700]
+offset_left = -967.0
+offset_top = 541.0
+offset_right = 3088.0
+offset_bottom = 755.0
+color = Color(0.41018546, 0.708687, 0.43955258, 1)
+
+[node name="Tierra2" type="ColorRect" parent="Escenario" unique_id=814864813]
+offset_left = -690.0
+offset_top = 750.0
+offset_right = 3095.0
+offset_bottom = 939.0
+color = Color(0.6239088, 0.46871293, 0.32336476, 1)
+
+[node name="Montaña" type="ColorRect" parent="Escenario" unique_id=275170960]
+offset_left = -1483.0
+offset_top = 6.0
+offset_bottom = 959.0
+color = Color(0.40681463, 0.2969111, 0.18886378, 1)
+
+[node name="M_extra" type="ColorRect" parent="Escenario" unique_id=1651921258]
+offset_left = -1242.191
+offset_top = 255.1102
+offset_right = 1049.5734
+offset_bottom = 1009.2727
+rotation = 0.31411752
+color = Color(0.40681463, 0.2969111, 0.18886378, 1)
+
+[node name="M_extra2" type="ColorRect" parent="Escenario" unique_id=595386539]
+offset_left = 117.93228
+offset_top = 473.38284
+offset_right = 235.20297
+offset_bottom = 543.10864
+rotation = 0.0025670528
+color = Color(0.40681463, 0.2969111, 0.18886378, 1)
+
+[node name="M_extra3" type="ColorRect" parent="Escenario" unique_id=1198910403]
+offset_left = -17.0
+offset_top = 364.0
+offset_right = 100.27069
+offset_bottom = 433.7258
+rotation = 0.0025670528
+color = Color(0.40681463, 0.2969111, 0.18886378, 1)
+
+[node name="M_extra4" type="ColorRect" parent="Escenario" unique_id=1445775988]
+offset_left = 391.00012
+offset_top = 953.0
+offset_right = 1874.0001
+offset_bottom = 1627.9907
+rotation = -0.19640914
+color = Color(0.40681463, 0.2969111, 0.18886378, 1)
+
+[node name="M_extra5" type="ColorRect" parent="Escenario" unique_id=927325099]
+offset_left = 1581.0
+offset_top = 765.99994
+offset_right = 3064.0
+offset_bottom = 1410.0742
+rotation = -0.4097783
+color = Color(0.40681463, 0.2969111, 0.18886378, 1)
+
+[node name="Montaña_2" type="ColorRect" parent="Escenario" unique_id=778656363]
+offset_left = 2743.0
+offset_top = 976.00006
+offset_right = 4226.0
+offset_bottom = 1972.6587
+rotation = -1.5560651
+color = Color(0.40681463, 0.2969111, 0.18886378, 1)
+
+[node name="Tierra" type="CollisionShape2D" parent="Escenario" unique_id=1913127987]
+position = Vector2(1055, 628.5)
+shape = SubResource("RectangleShape2D_lgngo")
+
+[node name="Tierra3" type="CollisionShape2D" parent="Escenario" unique_id=1716286975]
+position = Vector2(176, 507.5)
+shape = SubResource("RectangleShape2D_aou4a")
+
+[node name="Tierra4" type="CollisionShape2D" parent="Escenario" unique_id=293863412]
+position = Vector2(51, 400)
+shape = SubResource("RectangleShape2D_5ckkb")
+
+[node name="Muros_vacio" type="CollisionShape2D" parent="Escenario" unique_id=1662164567]
+position = Vector2(-41.5, 329)
+shape = SubResource("RectangleShape2D_otwa2")
+
+[node name="Muros_vacio2" type="CollisionShape2D" parent="Escenario" unique_id=1519858296]
+position = Vector2(2790.5, -58)
+shape = SubResource("RectangleShape2D_2hh7m")
+
+[node name="Muros_vacio3" type="CollisionShape2D" parent="Escenario" unique_id=1220131967]
+position = Vector2(2424.631, 479.10205)
+rotation = 1.1494989
+shape = SubResource("RectangleShape2D_t8jxu")
+
+[node name="Nube" type="StaticBody2D" parent="." unique_id=1837049702]
+position = Vector2(296, 381)
+
+[node name="Nube" type="ColorRect" parent="Nube" unique_id=1841657059]
+offset_left = 11.0
+offset_top = 18.0
+offset_right = 113.0
+offset_bottom = 55.0
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Nube" unique_id=663402575]
+position = Vector2(61.5, 36)
+shape = SubResource("RectangleShape2D_6ba58")
+
+[node name="Nube3" type="StaticBody2D" parent="." unique_id=1827289425]
+position = Vector2(216, 192)
+
+[node name="Nube" type="ColorRect" parent="Nube3" unique_id=1716837682]
+offset_left = 11.0
+offset_top = 18.0
+offset_right = 113.0
+offset_bottom = 55.0
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Nube3" unique_id=1875441847]
+position = Vector2(61.5, 36)
+shape = SubResource("RectangleShape2D_6ba58")
+
+[node name="Nube4" type="StaticBody2D" parent="." unique_id=976394619]
+position = Vector2(456, 244)
+
+[node name="Nube" type="ColorRect" parent="Nube4" unique_id=783669625]
+offset_left = 11.0
+offset_top = 18.0
+offset_right = 113.0
+offset_bottom = 55.0
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Nube4" unique_id=1464301776]
+position = Vector2(61.5, 36)
+shape = SubResource("RectangleShape2D_6ba58")
+
+[node name="Nube2" type="StaticBody2D" parent="." unique_id=1034104112]
+position = Vector2(60, 306)
+
+[node name="Nube" type="ColorRect" parent="Nube2" unique_id=2063466785]
+offset_left = 11.0
+offset_top = 18.0
+offset_right = 113.0
+offset_bottom = 55.0
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Nube2" unique_id=438610138]
+position = Vector2(61.5, 36)
+shape = SubResource("RectangleShape2D_fw4w5")
+
+[node name="Jugador" parent="." unique_id=1932978171 instance=ExtResource("1_6ba58")]
+position = Vector2(554, 499)

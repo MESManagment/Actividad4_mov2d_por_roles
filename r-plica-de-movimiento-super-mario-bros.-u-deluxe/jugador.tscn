@@ -1,0 +1,29 @@
+[gd_scene format=3 uid="uid://olwm7bm0o2lk"]
+
+[ext_resource type="Texture2D" uid="uid://b51glenxcst41" path="res://icon.svg" id="1_16k11"]
+[ext_resource type="Script" uid="uid://y4x5dsn8y7jb" path="res://jugador.gd" id="1_omvyu"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_omvyu"]
+size = Vector2(64, 64)
+
+[node name="Jugador" type="CharacterBody2D" unique_id=1932978171]
+script = ExtResource("1_omvyu")
+
+[node name="Sprite2D" type="Sprite2D" parent="." unique_id=1326452938]
+scale = Vector2(0.5, 0.5)
+texture = ExtResource("1_16k11")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="." unique_id=1224537131]
+shape = SubResource("RectangleShape2D_omvyu")
+
+[node name="Camera2D" type="Camera2D" parent="." unique_id=689100914]
+
+[node name="CanvasLayer" type="CanvasLayer" parent="." unique_id=1435660987]
+
+[node name="Label" type="Label" parent="CanvasLayer" unique_id=159139250]
+offset_left = 4.0
+offset_top = 6.0
+offset_right = 230.0
+offset_bottom = 55.0
+text = "⬅️ ➡️ : Moverse
+⬆️ : Salto / Doble Salto"
