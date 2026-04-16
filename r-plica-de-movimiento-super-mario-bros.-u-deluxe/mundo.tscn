@@ -1,6 +1,7 @@
 [gd_scene format=3 uid="uid://kl07ey8xwddk"]
 
 [ext_resource type="PackedScene" uid="uid://olwm7bm0o2lk" path="res://jugador.tscn" id="1_6ba58"]
+[ext_resource type="PackedScene" uid="uid://by7g5u0tj8fc8" path="res://enemigo.tscn" id="2_lgngo"]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_lgngo"]
 size = Vector2(2112, 169)
@@ -184,5 +185,16 @@ offset_bottom = 55.0
 position = Vector2(61.5, 36)
 shape = SubResource("RectangleShape2D_fw4w5")
 
-[node name="Jugador" parent="." unique_id=1932978171 instance=ExtResource("1_6ba58")]
+[node name="Jugador" parent="." unique_id=1932978171 groups=["player"] instance=ExtResource("1_6ba58")]
 position = Vector2(554, 499)
+
+[node name="Marker2D" type="Marker2D" parent="." unique_id=2108482188]
+position = Vector2(1613, 543)
+
+[node name="Marker2D" type="Marker2D" parent="Marker2D" unique_id=1659846806]
+position = Vector2(-1390, -2)
+
+[node name="Enemigo" parent="." unique_id=1627501470 node_paths=PackedStringArray("patrol_points") instance=ExtResource("2_lgngo")]
+position = Vector2(1334, 555)
+speed = 200.0
+patrol_points = [NodePath("../Marker2D"), NodePath("../Marker2D/Marker2D")]
